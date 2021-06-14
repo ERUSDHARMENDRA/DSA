@@ -56,10 +56,12 @@ int main()
 
 
     //check if stack is empty
-    if(isEmpty(s)){
-        printf(The stack is empty);
+    if (isEmpty(s))
+    {
+          printf(The stack is empty);
     }else{
-        printf(The stack is not empty);
+          printf(The stack is not empty);
     }
+   
     return 0;
 }
