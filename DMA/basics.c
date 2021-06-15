@@ -27,3 +27,4 @@ int main(){
 -Pointer play very important role in DMA,
 
 -ALLOCATED memory can only be accessed through POINTERS.
+
