@@ -1,4 +1,5 @@
-/*
+/*                                MALLOC
+
 -malloc is a built-in function declared in the header file <stdlib.h>
 
 -malloc is short name for "memory allocation" and is used to dynamically allocate a single large block of contiguous memory according to the size specified
