@@ -12,7 +12,7 @@
   -CIRCULAR LINKED LIST: last element is linked to the first element.
 
 -SINGLE LINKED LIST
-   -|data | link |
+   -|data | link | 
 
 
 
