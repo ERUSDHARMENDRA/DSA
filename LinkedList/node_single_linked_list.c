@@ -10,6 +10,7 @@
 
  //*! WE WILL USE SELF REFERENTIAL STRUCTURE FOR CREATING A NODE OF THE SINGLE LINKED LIST
 
+
 */
 
 #include <stdio.h>
@@ -17,9 +18,8 @@
 
 struct node
 {
+    //!HAVING PROBLEM WITH STRING
     int roll;
-    char name[15];
-    char stdncode[5];
     int class;
     int rank;
     struct node *link; //! here, 'link' is a pointer to struct 'node'. In single linked list there should be only one pointer
@@ -32,15 +32,13 @@ int main()
     head->roll = 8;
     head->class = 7;
     head->rank = 2;
-    head->stdncode = "AGENT";
-    head->name = "ERUS";
 
+    printf("Class : ");
     printf("%d", head->class);
-    printf("%s", head->name);
+    printf("\nRoll : ");
     printf("%d", head->roll);
-    printf("%s", head->stdncode);
+    printf("\nRank : ");
     printf("%d", head->rank);
 
-    
     return 0;
 }
