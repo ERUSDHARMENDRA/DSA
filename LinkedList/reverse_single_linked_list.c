@@ -1,6 +1,3 @@
-//! TIME COMPLEXICITY IS: O(1) WHERE AS IN CASE OF ARRAY IT'S O(n)
-
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -10,18 +7,19 @@ struct node
     struct node *link;
 };
 
-struct node *del_first(struct node *head)
-{
-    if (head == NULL)
-    {
-        printf("List is already empty !");
-    }
-    else
-    {
-        struct node *temp = head;
-        head = head->link;
-        free(temp);
-    }
+struct node *reverse(struct node *head)
+{                 
+    struct node *prev = NULL;
+    struct node *next = NULL;
+
+    while (head != NULL)
+    {     
+        next = head->link;
+        head->link = prev;
+        prev = head;
+        head = next;
+    } 
+    head = prev;
     return head;
 }
 
@@ -29,13 +27,12 @@ int main()
 {
     struct node *head = malloc(sizeof(struct node));
     struct node *ptr = head;
-    head = del_first(head);
+    head = reverse(head);
     ptr = head;
     while (ptr != NULL)
     {
         printf("%d", ptr->data);
         ptr = ptr->link;
     }
-
     return 0;
 }

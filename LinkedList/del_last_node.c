@@ -1,3 +1,5 @@
+//! TIME COMPLEXICITY IS: O(n) whereas for array its O(1)
+
 #include<stdio.h>
 #include<stdlib.h>
 
